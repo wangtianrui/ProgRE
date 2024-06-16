@@ -9,7 +9,7 @@ We directly convert the parameters of the HuBERT model trained based on the Mind
 
 First, we visualize the representations of the 13 layers and the error. The first column is the result from MindSpore, the second column is the result from PyTorch, and the third column is the error with the formula `diff = abs(ms - pt)`.
 
-![](./supplementary_results/test.png)
+![](./test.png)
 
 Next, we show the relative error, calculated as `np.mean(abs(ms - pt)) / np.mean(abs(ms))`, with the result being as follow. 
 ```txt
