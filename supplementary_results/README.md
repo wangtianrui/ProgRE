@@ -4,7 +4,7 @@
 * Chinese Speech Recognition Performance: Demonstrates the performance of the proposed model on the Chinese speech recognition task.
 
 
-## Analysis of Migration Errors
+## Migration Errors
 We directly convert the parameters of the HuBERT model trained based on the MindSpore framework into a format readable by PyTorch. Then, using the same parameters, we extract features from the same audio using HuBERT built with MindSpore and HuBERT built with PyTorch, respectively. We saved the input to the encoder and the output of each layer of the encoder, totaling 13 layers of representations for comparison.
 
 First, we visualize the representations of the 13 layers and the error. The first column is the result from MindSpore, the second column is the result from PyTorch, and the third column is the error with the formula `diff = abs(ms - pt)`.
@@ -32,7 +32,7 @@ This causes a slight performance degradation when the model pre-trained based on
 
 
 
-## Chinese Speech Recognition Performance
+## Chinese ASR
 In our paper, we mentioned the capability of processing Chinese speech. To further verify this, we evaluated the Chinese speech recognition performance on the AISHELL1 dataset, results are shown as follow,
 
 | Method | Pre-training Data | CER on AISHELL1 |
