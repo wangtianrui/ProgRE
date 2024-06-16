@@ -1,0 +1,70 @@
+# network architecture
+seed: 1337
+is_distributed: False
+exp_dir: 'default'
+
+context:
+  device_target: 'Ascend'
+  save_graphs: False
+  mode: 0 # 0: GRAPH_MODE, 1: PYNATIVE_MODE
+  enable_graph_kernel: False
+ 
+extractor_conf:
+  conv_layers: 7
+  stride_list: [ 5, 2, 2, 2, 2, 2, 2 ]
+  kernel_size_list: [ 10, 3, 3, 3, 3, 2, 2 ]
+  layer_norm: False
+  output_dim: 512
+  feature_grad_mult: 0.1
+  dropout: 0.0
+  has_bias: False
+  label_rate: 50
+
+hubert_conf:
+  input_dim: 512
+  output_dim: 768
+  n_classes: 504
+  final_dim: 256
+  logit_temp: 0.1
+  dropout_input: 0.1
+  dropout_features: 0.1
+  pred_masked_weight: 1.0
+  pred_unmasked_weight: 0.0
+  feature_pen_weight: 10
+
+# encoder related
+encoder: transformer
+encoder_conf:
+  encoder_embed_dim: 768     # dimension of attention
+  encoder_attention_heads: 12
+  encoder_ffn_embed_dim: 3072   # the number of units of position-wise feed forward
+  encoder_layers: 12       # the number of encoder blocks
+  conv_pos: 128            # number of filters for convolutional positional embeddings
+  conv_pos_groups: 16      # number of groups for convolutional positional embedding
+  conv_pos_use_same_pad: True
+  pos_conv_depth: 1
+  dropout_rate: 0.1
+  attention_dropout_rate: 0.1
+  activation_dropout_rate: 0.0
+  activation_fn: 'gelu'
+  layer_norm_first: False
+  required_seq_len_multiple: 2
+  encoder_layerdrop: 0.05
+  positional_dropout_rate: 0.1
+  normalize_before: True
+  pos_enc_layer_type: 'conv_pos'
+  input_layer: ""
+
+# feature extraction
+collate_conf:
+  mask_conf:
+    mask: True
+    mask_prob: 0.8
+    mask_length: 10
+    mask_selection: 'static'
+    mask_other : 0.0
+    min_masks: 2
+    min_space: 1
+    no_mask_overlap: False
+    downsample_rate: 320
+    channel_mask_prob: 0
