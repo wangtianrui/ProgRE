@@ -202,7 +202,7 @@ To more intuitively demonstrate the performance of our method on the voice conve
 
 * HuBERT large
 
-    <video controls="controls" style="width: 200px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM2_E30001_gen.wav"/></video>
+    <audio controls="controls" style="width: 200px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM2_E30001_gen.wav"/></audio>
     <audio controls="controls" style="width: 200px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM1_E30001_gen.wav"/></audio> 
     <audio controls="controls" style="width: 200px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF1_E30007_gen.wav"/></audio> 
     <audio controls="controls" style="width: 200px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF2_E30023_gen.wav"/></audio> 
