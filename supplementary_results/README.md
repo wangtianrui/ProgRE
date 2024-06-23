@@ -146,80 +146,80 @@ To more intuitively demonstrate the performance of our method on the voice conve
 
 * The following audios are the original recordings of four different speakers.
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/origin_audios/SEM2_src.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/origin_audios/SEM1_src.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/origin_audios/SEF1_src.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/origin_audios/SEF2_src.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEM2_src.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEM1_src.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEF1_src.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEF2_src.wav"/></audio> 
     
     
 
 * The audio sample of the target speaker.
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/origin_audios/TEF1_tgt.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/TEF1_tgt.wav"/></audio> 
 
 <hr style="height:1px;border:none;border-top:1px dashed #555555;" />
 
 * Wav2vec2.0 base
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM2_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM2_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF2_E30023_gen.wav"/></audio> 
 
 * HuBERT base
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/base/SEM2_E30001_gen.wav"/></audio>
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/base/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/base/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/base/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEM2_E30001_gen.wav"/></audio>
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEF2_E30023_gen.wav"/></audio> 
     
 
 * WavLM base
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/base/SEM2_E30001_gen.wav"/></audio>
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/base/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/base/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/base/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEM2_E30001_gen.wav"/></audio>
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEF2_E30023_gen.wav"/></audio> 
     
 
 * ProgRE base
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/base/SEM2_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/base/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/base/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/base/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEM2_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEF2_E30023_gen.wav"/></audio> 
     
 
 <hr style="height:1px;border:none;border-top:1px dashed #555555;" />
 
 * Wav2vec2.0 large
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM2_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM2_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF2_E30023_gen.wav"/></audio> 
     
 
 * HuBERT large
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/large/SEM2_E30001_gen.wav"/></audio>
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/large/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/large/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/hubert/large/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM2_E30001_gen.wav"/></audio>
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF2_E30023_gen.wav"/></audio> 
     
 
 * WavLM large
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/large/SEM2_E30001_gen.wav"/></audio>
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/large/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/large/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/wavlm/large/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM2_E30001_gen.wav"/></audio>
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF2_E30023_gen.wav"/></audio> 
     
 
 * ProgRE large
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/large/SEM2_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/large/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/large/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/blob/master/supplementary_results/vc_demos/progre/large/SEF2_E30023_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEM2_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEM1_E30001_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEF1_E30007_gen.wav"/></audio> 
+    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEF2_E30023_gen.wav"/></audio> 
     
