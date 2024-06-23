@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>This folder primarily contains auxiliary materials for our paper</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+<ul>
+<h2 id="voice-conversion">Voice Conversion</h2>
+<p>To more intuitively demonstrate the performance of our method on the voice conversion task, we present some results of the any-to-one voice conversion task.</p>
+<blockquote>
+<p>Any-to-one Voice Conversion aims to convert speech of any speaker to the speech with target speaker's voice.</p>
+</blockquote>
+<ul>
+<li>
+<p>The following audios are the original recordings of four different speakers.</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEM2_src.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEM1_src.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEF1_src.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/SEF2_src.wav"/></audio></p>
+</li>
+<li>
+<p>The audio sample of the target speaker.</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/origin_audios/TEF1_tgt.wav"/></audio></p>
+</li>
+</ul>
+<hr style="height:1px;border:none;border-top:1px dashed #555555;" />
+<ul>
+<li>
+<p>Wav2vec2.0 base</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/base/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>HuBERT base</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/base/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>WavLM base</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/base/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>ProgRE base</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/base/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+</ul>
+<hr style="height:1px;border:none;border-top:1px dashed #555555;" />
+<ul>
+<li>
+<p>Wav2vec2.0 large</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wav2vec2.0/large/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>HuBERT large</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/hubert/large/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>WavLM large</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+<li>
+<p>ProgRE large</p>
+<p><audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEM1_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEF1_E30007_gen.wav"/></audio>
+<audio controls="controls" style="width: 300px"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/progre/large/SEF2_E30023_gen.wav"/></audio></p>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
