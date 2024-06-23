@@ -210,10 +210,10 @@ To more intuitively demonstrate the performance of our method on the voice conve
 
 * WavLM large
 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM2_E30001_gen.wav"/></audio>
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM1_E30001_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF1_E30007_gen.wav"/></audio> 
-    <audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF2_E30023_gen.wav"/></audio> 
+<audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM2_E30001_gen.wav"/></audio>
+<audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEM1_E30001_gen.wav"/></audio> 
+<audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF1_E30007_gen.wav"/></audio> 
+<audio controls="controls" style="width: 200px" type="audio/mpeg"><source src="https://github.com/wangtianrui/ProgRE/raw/master/supplementary_results/vc_demos/wavlm/large/SEF2_E30023_gen.wav"/></audio> 
     
 
 * ProgRE large
