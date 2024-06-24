@@ -95,9 +95,9 @@ class TransformerSentenceEncoderLayer(nn.Cell):
 
         return x
 
-class FAS(nn.Cell):
+class SpeakerExtractor(nn.Cell):
     def __init__(self, in_dim, bottleneck_dim=256, global_context_att=False):
-        super(FAS, self).__init__()
+        super(SpeakerExtractor, self).__init__()
         self.in_dim = in_dim
         self.global_context_att = global_context_att
 
@@ -190,7 +190,7 @@ class ProgRETransformerEncoder(nn.Cell):
         self.layer_drop_rate = encoder_layer_drop_rate
         # TODO: Implement layer drop.
         
-        self.astp = FAS(in_dim=self.embedding_dim, bottleneck_dim=256)
+        self.astp = SpeakerExtractor(in_dim=self.embedding_dim, bottleneck_dim=256)
         self.transpose = ops.Transpose()
         self.spk_norm = spk_norm
         if spk_norm:
