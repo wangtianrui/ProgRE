@@ -111,7 +111,7 @@ class ProgRE(nn.Cell):
         self.encoder_type = encoder_type
 
     def forward_align(self, source, x_len, padding_mask, pitch, output_layer=None):
-        features = self.forward_features(source, x_len)
+        features = self.feature_extractor(source, x_len)
         features = features.transpose(0, 2, 1)  # (B, T, C)
         features = self.layer_norm(features)
         T = features.shape[1]
@@ -119,8 +119,8 @@ class ProgRE(nn.Cell):
             features = self.post_extract_proj(features)
         pitch_emb = self.pitch_encoder(pitch, padding_mask=padding_mask)
         features = self.sub_norm(features - pitch_emb)
-        h_enc = self.encoder(features, padding_mask=padding_mask.copy())
-        return h_enc
+        h_enc, hidden_layers = self.encoder(features, padding_mask=padding_mask.copy())
+        return h_enc, hidden_layers
     
 class ProgRETraining(mindspore.nn.Cell):
     def __init__(self,

@@ -277,7 +277,7 @@ class MultiheadAttention(nn.Cell):
         if self.out_proj.has_bias:
             self.out_proj.bias.set_data(initializer(Constant(0.0), self.out_proj.bias.shape, self.out_proj.bias.dtype))
 
-    def construct(self, query, key, value, key_padding_mask=None, attn_mask=None):
+    def construct(self, query, key, value, padding_mask=None, attn_mask=None):
         """Construct."""
         # attn_mask: ms.bool_
         tgt_len, bsz, embed_dim = query.shape
@@ -297,9 +297,9 @@ class MultiheadAttention(nn.Cell):
             if attn_mask.ndim == 2:
                 attn_mask = attn_mask.expand_dims(0)
 
-        if key_padding_mask is not None:
+        if padding_mask is not None:
             key_padding_mask = ops.BroadcastTo(
-                (-1, self.num_heads, -1, -1))(key_padding_mask.view(bsz, 1, 1,
+                (-1, self.num_heads, -1, -1))(padding_mask.view(bsz, 1, 1,
                                                                     src_len)).reshape(bsz * self.num_heads, 1, src_len)
             if attn_mask is None:
                 attn_mask = key_padding_mask
