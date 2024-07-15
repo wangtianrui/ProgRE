@@ -174,7 +174,7 @@ class HuBERTTraining(nn.Cell):
                  pred_masked_weight=1.0,
                  pred_unmasked_weight=0.0,
                  feature_pen_weight=10,
-                 encoder_type='conformer',
+                 encoder_type='transformer',
                  compute_type=mindspore.float16,
                  feature_grad_mult=0.1,
                  stride_list=None,
