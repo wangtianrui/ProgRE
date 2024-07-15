@@ -50,7 +50,7 @@ config = get_config("./config/progre.yaml")
 print(config)
 model = init_progre_model(config, input_dim=config['progre_conf']['input_dim'])
 print(model)
-ms_param = load_checkpoint(r'E:\data_models\models\speech_split\ss_pitch_all\CKP-37_8240.ckpt')
+ms_param = load_checkpoint(r'./pretrained_model/base_progre.ckpt')
 print(load_param_into_net(model, ms_param))
 model.acc_net.set_train(False)
 model.acc_net.set_grad(False)
@@ -59,7 +59,7 @@ model.acc_net.mask = False
 kernel_size = [int(i) for i in config["extractor_conf"]['kernel_size_list']]
 stride = [int(i) for i in config["extractor_conf"]['stride_list']]
 
-wav = lib.load(r"E:\codes\ProgRE\supplementary_results\LJ001-0068.wav", sr=16000)[0]
+wav = lib.load(r"./supplementary_results/LJ001-0068.wav", sr=16000)[0]
 
 wav = np.pad(wav, [0, 320-len(wav)%320])
 origin_len = len(wav)
