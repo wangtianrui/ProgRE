@@ -25,10 +25,10 @@ pip install -r requirements.txt
 ```
 
 ## Todo List
-- [x] ProgRE and HuBERT model under MindSpore Framework
-- [x] Pretrained checkpoint of Base version ProgRE and HuBERT under MindSpore Framework
+- [x] Codes of [ProgRE](https://github.com/wangtianrui/ProgRE/blob/master/models/progre.py) and [HuBERT](https://github.com/wangtianrui/ProgRE/blob/master/models/hubert.py) model under MindSpore Framework
+- [x] [Pretrained checkpoint of Base version ProgRE and HuBERT under MindSpore Framework](https://drive.google.com/drive/folders/1nLsGpXYBsc-kwHKWolDSWISNw3ji4CFY?usp=sharing)
 - [x] [Error analysis of migrating MindSpore framework models to Pytorch framework](https://github.com/wangtianrui/ProgRE/tree/master/supplementary_results)
-- [x] How to use the pre-trained model in the PyTorch framework
+- [x] [Usage of the pre-trained model in the MindSpore/PyTorch framework](https://github.com/wangtianrui/ProgRE?tab=readme-ov-file#usage-under-mindspore)
 - [ ] Training codes under MindSpore Framework
 - [ ] Pretrained checkpoint of Large version ProgRE and HuBERT under MindSpore Framework (84,500 hours)
 - [ ] Release 84,500 hours English-Chinese pre-training dataset
