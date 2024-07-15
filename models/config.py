@@ -238,6 +238,16 @@ def merge(args, cfg):
     return cfg
 
 
-def get_config(cfg_path):
+def get_config(cfg_path=""):
+    """Get Config according to the yaml file and cli arguments."""
+    parser = argparse.ArgumentParser(description='default name', add_help=False)
+    parser.add_argument(
+        '--config_path',
+        type=str,
+        default="",
+        help='Config file path',
+    )
     cfg = Config(cfg_path)
+    args = parse_cli_to_yaml(parser=parser, cfg=cfg, cfg_path=cfg_path)
+    merge(args, cfg)
     return cfg

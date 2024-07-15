@@ -156,7 +156,7 @@ class ProgRETransformerEncoder(nn.Cell):
                  encoder_layer_drop_rate: float = 0.05,
                  encoder_inter_loss_layer="3;999",
                  spk_norm=False):
-        super(Wav2VecTransformerEncoder, self).__init__()
+        super(ProgRETransformerEncoder, self).__init__()
         self.dropout_rate = dropout_rate
         self.embedding_dim = encoder_embed_dim
         self.required_seq_len_multiple = required_seq_len_multiple
