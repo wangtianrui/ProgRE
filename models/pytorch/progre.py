@@ -1,15 +1,13 @@
 import logging
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Dict, Optional, Tuple
 import torch.nn.functional as F
 import numpy as np
 import torch
 import torch.nn as nn
-from .wav2vec2_model import (
+from .model import (
     ConvFeatureExtractionModel,
-    GradMultiply,
     LayerNorm,
-    compute_mask_indices,
     get_activation_fn,
     MultiheadAttention,
     SamePad,
