@@ -134,7 +134,7 @@ model.load_state_dict(model_state)
 model.eval()
 kernel_size = [int(i) for i in config_ms["extractor_conf"]['kernel_size_list']]
 stride = [int(i) for i in config_ms["extractor_conf"]['stride_list']]
-wav = lib.load(r"E:\codes\ProgRE\supplementary_results\LJ001-0068.wav", sr=16000)[0]
+wav = lib.load(r"./supplementary_results/LJ001-0068.wav", sr=16000)[0]
 wav = np.pad(wav, [0, 320-len(wav)%320])
 origin_len = len(wav)
 inp_len = len(wav)
