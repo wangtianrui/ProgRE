@@ -83,6 +83,69 @@ print(feature.shape)
 
 * First, it is necessary to convert the model checkpoint from the MindSpore framework to a PyTorch checkpoint.
 ```shell
-# 
+# Please modify the path in the python file before running
 python migrating/chkp_conversion.py
+```
+
+* Load converted checkpoint and inference
+
+```python
+import yaml
+from models.pytorch.progre import ProgRE, ProgREConfig
+import torch
+from copy import deepcopy
+import librosa as lib
+from models.config import get_config
+import pyworld as pw
+from models.utils import extract_pitch, make_pad_mask, get_feat_extract_output_lengths
+import numpy as np
+
+config_ms = get_config("./config/progre.yaml")
+
+with open("./config/progre_pt.yaml", 'r') as file:
+    config = yaml.load(file, Loader=yaml.FullLoader)
+print(config)
+config = ProgREConfig(**config)
+model = ProgRE.build_model(config)
+ckpt = torch.load(r"pretrained_model/TORCHModel_base_progre.ckpt", map_location="cpu")["model"]
+pretrained_dict = {}
+model_state = model.state_dict()
+torch_names = deepcopy(list(model_state.keys()))
+for k, v in ckpt.items():
+    if k.find("fbank_encoder") != -1 and k.find("fc") != -1:
+        k = k.replace("fc1", "norm1")
+        k = k.replace("fc2", "norm2")
+    if k.find("spk_astp.out.dense") != -1:
+        k = k.replace("dense.", "")
+    if k.find("sub_spk_norm") != -1:
+        k = k.replace("beta", "bias")
+    if k in model_state and k.find("label_embs_concat") == -1 and k.find("final_proj") == -1:
+        if v.shape != model_state[k].shape:
+            if len(v.shape) != len(model_state[k].shape):
+                print("%s convert shape from %s to %s"%(k, str(v.shape), str(model_state[k].shape))) 
+                v = v.reshape(model_state[k].shape)
+            else:
+                print("transpose shape from %s to %s"%(str(v.shape), str(v.T.shape))) 
+                v = v.T
+        pretrained_dict[k] = v
+        torch_names.remove(k)
+model_state.update(pretrained_dict)
+model.load_state_dict(model_state)
+model.eval()
+kernel_size = [int(i) for i in config_ms["extractor_conf"]['kernel_size_list']]
+stride = [int(i) for i in config_ms["extractor_conf"]['stride_list']]
+wav = lib.load(r"E:\codes\ProgRE\supplementary_results\LJ001-0068.wav", sr=16000)[0]
+wav = np.pad(wav, [0, 320-len(wav)%320])
+origin_len = len(wav)
+inp_len = len(wav)
+feature_lens = np.array([get_feat_extract_output_lengths(origin_len, kernel_size, stride), ])
+feature_paded_len = get_feat_extract_output_lengths(inp_len, kernel_size, stride)
+pitch = extract_pitch(wav)[:, :feature_paded_len]
+feature, hidden_layers = model(
+    source=torch.tensor(wav[None, :], dtype=torch.float),
+    padding_mask=torch.BoolTensor(make_pad_mask(feature_lens, max_len=feature_paded_len)),
+    pitch=torch.tensor(pitch, dtype=torch.float),
+    features_only=True,
+)
+print(feature.shape)
 ```
