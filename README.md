@@ -30,7 +30,7 @@ pip install -r requirements.txt
 - [x] [Error analysis of migrating MindSpore framework models to Pytorch framework](https://github.com/wangtianrui/ProgRE/tree/master/supplementary_results)
 - [x] [Usage of the pre-trained model in the MindSpore/PyTorch framework](https://github.com/wangtianrui/ProgRE?tab=readme-ov-file#usage-under-mindspore)
 - [ ] Training codes under MindSpore Framework
-- [ ] Pretrained checkpoint of Large version ProgRE and HuBERT under MindSpore Framework (84,500 hours)
+<!-- - [ ] Pretrained checkpoint of Large version ProgRE and HuBERT under MindSpore Framework (84,500 hours) -->
 - [ ] Release 84,500 hours English-Chinese pre-training dataset
 
 ## Usage under MindSpore
